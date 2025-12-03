@@ -11,7 +11,7 @@ const NavBar = ({setshowLogin}) => {
 
   return (
     <div className='NavBar'>
-        <Link to='./'><img src={assets.logo} alt="" className="logo" /></Link>
+        <Link to='/'><img src={assets.logo} alt="" className="logo" /></Link>
         
         <ul className="navbar-menu">
             <Link to='/' className={menu=="home"?"active":""} onCack={()=>setMenu("home")} >home</Link>
@@ -24,7 +24,7 @@ const NavBar = ({setshowLogin}) => {
             <img src={assets.search_icon} alt="" />
 
             <div className="navbar-search-icon">
-                <Link to='./cart'><img src={assets.basket_icon} alt="" /></Link>
+                <Link to='/cart'><img src={assets.basket_icon} alt="" /></Link>
                 <div  className={gettotalcartamount()>0?"dot":""}></div>
                 
             </div>
